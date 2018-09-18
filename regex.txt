@@ -1,0 +1,11 @@
+/*Passwords must be at least min. 8 and max. 16 characters in length, 
+minimum of 1 lower case letter [a-z] and 
+a minimum of 1 upper case letter [A-Z] and
+a minimum of 1 numeric character [0-9] and
+a minimum of 1 special character: $ @ $ ! % * ? & + = # 
+PASSWORD EXAMPLE : @Password1 
+*/
+
+
+Regex regex = new Regex("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&+=#]) [A-Za-z\\d$@$!%*?&+=#]{8,16}$");
+ 
